@@ -4,19 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./public/output.css" rel="stylesheet" />
+    <title>Email Subscribe</title>
   </head>
   <body>
-    <div
-      class="mx-4 md:mx-auto my-4 p-6 shadow-xl rounded-2xl w-auto md:w-3/4 bg-slate-50 border border-slate-300"
-    >
-      <h1
-        class="text-2xl font-bold border-b-2 border-slate-300 mb-4 pb-2 text-slate-700"
-      >
-        Lorem
-      </h1>
-      <p class="text-slate-700 font-medium my-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, velit?
-      </p>
+    <!--background container-->
+    <div class="flex items-center justify-center h-screen bg-zinc-700">
+      <!--card-->
+      <div class="bg-zinc-800 pt-5 px-3 pb-3 md:p-3 mx-6 rounded-2xl">
+        <!--flex container-->
+        <div
+          class="flex flex-col items-center md:flex-row rounded-l-xl rounded-r-none"
+        >
+          <!--image-->
+          <img
+            src="images/image.jpg"
+            class="object-fit rounded-xl h-96 w-64 md:h-64 md:w-auto md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-300"
+          />
+          <!--content-->
+          <div class="flex flex-col items-center md:place-items-start p-6 md:p-12">
+            <h2
+              class="max-w-xs md:max-w-md font-serif text-xl font-medium text-center text-white md:text-left"
+            >
+              Tenha dicas de dieta e fitness na sua caixa de entrada
+            </h2>
+            <p
+              class="max-w-xs md:max-w-md my-4 text-sx leading-5 tracking-wide text-center md:text-left text-white"
+            >
+              Coma melhor e se exercite mais. Se inscreva para receber novidades
+              do Dieta&Fitness.
+            </p>
+            <div class="flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0"><input type="text" placeholder="seu@email.com"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
