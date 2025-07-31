@@ -890,6 +890,10 @@ video {
   font-weight: 500;
 }
 
+.lowercase {
+  text-transform: lowercase;
+}
+
 .leading-5 {
   line-height: 1.25rem;
 }
