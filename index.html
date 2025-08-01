@@ -7,34 +7,60 @@
     <title>Projects Homepage</title>
   </head>
   <body>
-    <div
-      class="mx-4 md:mx-auto my-4 p-6 shadow-xl rounded-2xl w-auto md:w-3/4 bg-slate-50 border border-slate-300"
-    >
-      <h1
-        class="text-2xl font-bold border-b-2 border-slate-300 mb-4 pb-2 text-slate-700"
+    <!--bg div-->
+    <div class="flex flex-col h-screen bg-palette1">
+      <!--topbar lg screen-->
+      <div
+        class="hidden lg:flex bg-palette3 px-8 py-2 items-center justify-center space-x-32 font-bold text-center"
       >
-        Lorem ipsum dolor sit.
-      </h1>
-      <p class="text-slate-700 font-medium my-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nulla
-        dolores adipisci in, voluptatem labore culpa unde autem eligendi sed
-        porro tempore eos incidunt temporibus doloremque repellendus,
-        consequatur velit corrupti fugit illo debitis aspernatur rerum
-        provident. Inventore ipsum dignissimos perferendis eos, natus quasi
-        quos, enim repudiandae consectetur sapiente autem, itaque ab error
-        excepturi ea repellat rem vitae provident eligendi aut doloribus
-        architecto aperiam explicabo? Et voluptas, tempora voluptatibus corrupti
-        quo ducimus quis optio praesentium fugit perspiciatis placeat repellat
-        quasi illo nostrum quidem aperiam nobis error ab blanditiis?
-        Perferendis, culpa voluptates. Illum magnam nihil officiis enim
-        quibusdam harum vitae sunt incidunt.
-      </p>
-      <div class="font-medium text-indigo-700">
+        <div class="text-palette2 text-2xl flex-1 flex justify-center">
+          <div class="flex flex-col w-fit">
+          <span>Projetos do curso</span>
+          <span class="text-palette5 font-mono">Tailwind from Scratch</span>
+          <span class="text-xs text-right">feitos por Érick Mesquita</span>
+          </div>
+        </div>
+        <h3>Sobre o curso</h3>
+        <h3>Projetos</h3>
+        <h3>GitHub</h3>
+      </div>
+      <!--topbar lg screen-->
+      <div class="flex lg:hidden flex-row items-center space-x-10 mx-4">
+        <div
+          class="text-palette3 text-2xl flex-1 flex text-center my-4 justify-center"
+        >
+        <div class="flex flex-col w-fit">
+          <span class="font-semibold">Projetos do curso</span>
+          <span class="text-palette5 font-mono">Tailwind from Scratch</span>
+          <span class="text-xs text-right">feitos por Érick Mesquita</span>
+          </div>
+        </div>
+        <div class="w-10 h-10 m-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="w-full h-full text-palette5 hover:-rotate-90 duration-500"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!--temporary bar-->
+      <div
+        class="p-6 m-4 max-w-fit rounded-xl font-medium bg-palette3 text-palette6"
+      >
         <p class="my-4">
-          <a href="subscribe.html">Project Subscribe</a>
+          <a href="subscribe.html">Projeto "Subscribe"</a>
         </p>
         <p class="my-4">
-          <a href="pricing_grids.html">Project Pricing Grids</a>
+          <a href="pricing_grids.html">Projeto "Pricing Grids"</a>
         </p>
       </div>
     </div>
