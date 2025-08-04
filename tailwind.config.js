@@ -22,6 +22,19 @@ module.exports = {
         palette4: "#2cc295",
         palette5: "#00DF81",
         palette6: "#f1f7f6",
+
+        primary: "#FF6B6B",
+        secondary: "#4ECDC4",
+        accent: "#FFD93D",
+        dark: "#1A1A2E",
+
+
+      },
+      keyframes: {
+        fadeIn: { '0%': { opacity: 0, transform: 'translateY(20px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } }
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.8s ease-out forwards'
       }
     },
   },

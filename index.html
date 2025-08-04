@@ -1,68 +1,161 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./public/output.css" rel="stylesheet" />
-    <title>Projects Homepage</title>
-  </head>
-  <body>
-    <!--bg div-->
-    <div class="flex flex-col h-screen bg-palette1">
-      <!--topbar lg screen-->
-      <div
-        class="hidden lg:flex bg-palette3 px-8 py-2 items-center justify-center space-x-32 font-bold text-center"
-      >
-        <div class="text-palette2 text-2xl flex-1 flex justify-center">
-          <div class="flex flex-col w-fit">
-          <span>Projetos do curso</span>
-          <span class="text-palette5 font-mono">Tailwind from Scratch</span>
-          <span class="text-xs text-right">feitos por Érick Mesquita</span>
-          </div>
-        </div>
-        <h3>Sobre o curso</h3>
-        <h3>Projetos</h3>
-        <h3>GitHub</h3>
-      </div>
-      <!--topbar lg screen-->
-      <div class="flex lg:hidden flex-row items-center space-x-10 mx-4">
-        <div
-          class="text-palette3 text-2xl flex-1 flex text-center my-4 justify-center"
-        >
-        <div class="flex flex-col w-fit">
-          <span class="font-semibold">Projetos do curso</span>
-          <span class="text-palette5 font-mono">Tailwind from Scratch</span>
-          <span class="text-xs text-right">feitos por Érick Mesquita</span>
-          </div>
-        </div>
-        <div class="w-10 h-10 m-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="w-full h-full text-palette5 hover:-rotate-90 duration-500"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-            />
-          </svg>
-        </div>
-      </div>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Tailwind from Scratch</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Rolagem suave para todos os links internos */
+    html {
+      scroll-behavior: smooth;
+    }
 
-      <!--temporary bar-->
-      <div
-        class="p-6 m-4 max-w-fit rounded-xl font-medium bg-palette3 text-palette6"
-      >
-        <p class="my-4">
-          <a href="subscribe.html">Projeto "Subscribe"</a>
-        </p>
-        <p class="my-4">
-          <a href="pricing_grids.html">Projeto "Pricing Grids"</a>
-        </p>
+    /* Ajuste de offset para compensar a navbar fixa */
+    section {
+      scroll-margin-top: 60px; /* altura aproximada da navbar */
+    }
+  </style>
+  <link href="./public/output.css" rel="stylesheet" />
+  
+</head>
+<body class="bg-dark text-white font-sans">
+
+  <!-- NAVBAR -->
+  <header class="bg-dark fixed w-full z-10 shadow-lg">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-primary">Portfólio <span class="text-accent">/</span> <Tailwind class="font-mono text-secondary font-bold">Tailwind from Scratch</span></h1>
+      
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex space-x-6 text-lg">
+        <a href="#sobre" class="hover:text-primary transition">Sobre</a>
+        <a href="#projetos" class="hover:text-primary transition">Projetos</a>
+        <a href="#contato" class="hover:text-primary transition">Contato</a>
+      </nav>
+
+      <!-- Botão Mobile -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="menu" class="hidden flex-col items-center bg-dark md:hidden border-b border-gray-700 shadow-lg">
+      <a href="#sobre" class="block py-12 text-center text-3xl hover:text-primary transition duration-300">Sobre</a>
+      <a href="#projetos" class="block py-12 text-center text-3xl hover:text-primary transition duration-300">Projetos</a>
+      <a href="#contato" class="block py-12 text-center text-3xl hover:text-primary transition duration-300">Contato</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="h-screen flex items-center justify-center bg-gradient-to-br from-primary via-secondary to-accent text-dark text-center px-6">
+    <div class="animate-fadeIn">
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-4">Olá, eu sou o Érick!</h2>
+      <p class="text-xl md:text-2xl mb-6 max-w-2xl mx-auto">
+        Este é meu portfólio para mostrar os projetos criados no curso <span class="font-bold font-mono">Tailwind from Scratch</span>.
+      </p>
+      <a href="#projetos" class="bg-dark text-white px-6 py-3 rounded-2xl font-semibold hover:bg-primary hover:text-dark transition duration-300">
+        Ver Projetos
+      </a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="max-w-6xl mx-auto px-6 py-16 opacity-0 transition duration-700" data-animate>
+    <h3 class="text-3xl font-bold text-primary mb-6">Sobre Mim</h3>
+    <p class="text-lg leading-relaxed text-gray-300">
+      Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento web e estou aprendendo TailwindCSS para criar sites modernos e responsivos.
+      Este portfólio mostra alguns dos projetos que desenvolvi ao longo do curso <span class="font-mono font-medium">Tailwind from Scratch.</span>
+    </p>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="bg-secondary py-16 opacity-0 transition duration-700" data-animate>
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-dark mb-10">Meus Projetos</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card Projeto -->
+        <div class="bg-white text-dark rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition transform duration-300">
+          <img src="images/projeto1.png" alt="Projeto Subscribe" class="w-full">
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2">Email Subscribe – Captura de Leads Simples e Moderna</h4>
+            <p class="text-gray-700 mb-4"> Landing page responsiva para captura de e-mails, criada com HTML e TailwindCSS, focada em um design moderno e intuitivo.</p>
+            <a href="subscribe.html" class="text-primary font-semibold hover:underline">Ver mais →</a>
+          </div>
+        </div>
+
+        <div class="bg-white text-dark rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition transform">
+          <img src="images/projeto2-img2.png" alt="Pricing Cards Interativas" class="w-full">
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2">Pricing Cards Interativas</h4>
+            <p class="text-gray-700 mb-4">Design moderno e responsivo de cartões de preços, destacando planos e benefícios com visual atraente e animações sutis.</p>
+            <a href="pricing_grids.html" class="text-primary font-semibold hover:underline">Ver mais →</a>
+          </div>
+        </div>
+
+        <div class="bg-white text-dark rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition transform">
+          <img src="images/projeto3.png" alt="Modal de Produto Interativo" class="w-full">
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2">Modal de Produto Interativo</h4>
+            <p class="text-gray-700 mb-4">Interface responsiva de exibição de produto com destaque para oferta, opções de compra e design atraente para e-commerce.</p>
+            <a href="product_modal.html" class="text-primary font-semibold hover:underline">Ver mais →</a>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="max-w-6xl mx-auto px-6 py-16 opacity-0 transition duration-700" data-animate>
+    <h3 class="text-3xl font-bold text-primary mb-6">Entre em Contato</h3>
+    <form class="grid gap-6 max-w-xl">
+      <input type="text" placeholder="Seu nome" class="p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-primary">
+      <input type="email" placeholder="Seu e-mail" class="p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-primary">
+      <textarea placeholder="Sua mensagem" rows="4" class="p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+      <button class="bg-primary text-dark font-bold py-3 rounded-lg hover:bg-accent transition">
+        Enviar Mensagem
+      </button>
+    </form>
+  </section>
+
+  <!-- FOOTER  -->
+  <footer class="bg-dark py-6 text-center text-gray-400 text-sm">
+    © 2025 Érick - Todos os direitos reservados
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Botão menu mobile
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    // Botão menu mobile - abre/fecha
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    // Fecha o menu quando clica em um link do menu mobile
+    document.querySelectorAll("#menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.add("hidden");
+      });
+    });
+
+    // Animação de fade-in ao rolar a página
+    const sections = document.querySelectorAll("[data-animate]");
+    const animateOnScroll = () => {
+      sections.forEach(sec => {
+        const secTop = sec.getBoundingClientRect().top;
+        if (secTop < window.innerHeight - 100) {
+          sec.classList.add("opacity-100", "translate-y-0");
+        }
+      });
+    };
+    window.addEventListener("scroll", animateOnScroll);
+    animateOnScroll();
+  </script>
+
+</body>
 </html>
