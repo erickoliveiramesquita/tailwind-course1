@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lore – Leitor Imersivo de Ficção Fantástica</title>
+    <link href="./public/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+  </head>
+  <body>
+    <!-- Main Div -->
+    <div
+      class="fixed h-screen w-screen bg-no-repeat bg-center bg-cover z-0"
+      style="background-image: url('images/bg-16-9.png')"
+    ></div>
+    <div class="relative z-10">
+      <!-- Header -->
+      <header class="fixed w-full z-10 shadow-lg">
+        <div
+          class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+        >
+          <div class="flex flex-1 space-x-4">
+            <img src="images/favicon.png" class="h-8 w-8" />
+            <h1 class="text-sand font-serif font-light text-2xl">Lore</h1>
+          </div>
+          <nav class="w-full hidden md:flex flex-1 justify-around items-center">
+            <span class="text-sand font-medium">Novidades</span>
+            <span class="text-sand font-medium">Downloads</span>
+            <span class="text-sand font-medium">Sobre nós</span>
+          </nav>
+          <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 h-7 text-sand"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 8h16M4 16h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Center Div-->
+      <div
+        class="flex flex-col md:flex-row pb-0 px-7 md:px-10 pt-32 md:pt-52 md:pb-20 mx-auto max-w-md md:max-w-full md:justify-around space-x-0 md:space-x-14 space-y-16 md:space-y-0 items-center md:my-auto"
+      >
+        <!-- Main text-->
+        <div class="flex flex-col items-center max-w-md">
+          <h1 class="text-sand text-center font-serif font-medium text-5xl">
+            Explore contos de mundos distantes
+          </h1>
+          <div class="w-full border border-clay my-6"></div>
+          <h2 class="text-sand text-center font-medium text-xl">
+            Descubra um universo de histórias cativantes com nosso app de
+            leitura imersivo.
+          </h2>
+          <button
+            class="bg-clay px-7 py-3 rounded-full text-white mt-10 font-medium text-xl hover:bg-darkclay"
+          >
+            Baixe o app
+          </button>
+        </div>
+
+        <!-- Phone -->
+        <div
+          class="w-52 md:min-w-[17rem] h-96 md:h-[32rem] p-1 rounded-3xl bg-[#2d1f17] border-4 border-[#42312a] shadow-2xl shadow-black"
+        >
+          <div
+            class="flex flex-col justify-start px-5 h-full w-full to-sand rounded-2xl bg-cover"
+            style="background-image: url('images/phone-bg.png')"
+          >
+            <div class="flex justify-between items-center py-4 w-full">
+              <img src="images/favicon.png" class="h-6 w-6" />
+              <h1 class="text-sand font-serif font-light text-2xl select-none">
+                Lore
+              </h1>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search text-sand"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </div>
+            <div
+              class="flex flex-col justify-end w-full h-72 md:h-96 bg-cover rounded-xl shadow-lg p-2 bg-center"
+              style="background-image: url('images/capa1.png')"
+            >
+              <p
+                class="text-sand font-bold font-serif text-lg mb-4 select-none"
+              >
+                Sussurro do Cosmos
+              </p>
+              <div class="flex justify-between items-center">
+                <p class="text-sand text-sm select-none">Érick Mesquita</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bookmark-fill text-sand"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="relative md:fixed bottom-0 left-0 w-full text-sand text-sm text-center text-opacity-100 p-2 select-none mt-10 md:mt-0"
+      >
+        © 2025 Lore Book apps - Todos os direitos reservados
+      </footer>
+    </div>
+  </body>
+</html>

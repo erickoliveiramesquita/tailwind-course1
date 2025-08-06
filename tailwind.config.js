@@ -28,6 +28,10 @@ module.exports = {
         accent: "#FFD93D",
         dark: "#1A1A2E",
 
+        sand: "#ffefca",
+        clay: "#d87546",
+        darkclay: "#c26a3f"
+
 
       },
       keyframes: {
