@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js,ts,jsx,tsx}",],
+  content: ["./*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors:{
+      colors: {
         darkgunmetal: "#192230",
         arsenic: "#3d474e",
         canary: "#ffed00",
@@ -30,18 +30,22 @@ module.exports = {
 
         sand: "#ffefca",
         clay: "#d87546",
-        darkclay: "#c26a3f"
-
-
+        darkclay: "#c26a3f",
+      },
+      fontFamily: {
+        mulish: ["Mulish", "sans-serif"],
+        rokit: ["Rokkitt", "monospace"],
       },
       keyframes: {
-        fadeIn: { '0%': { opacity: 0, transform: 'translateY(20px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } }
+        fadeIn: {
+          "0%": { opacity: 0, transform: "translateY(20px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
       },
       animation: {
-        fadeIn: 'fadeIn 0.8s ease-out forwards'
-      }
+        fadeIn: "fadeIn 0.8s ease-out forwards",
+      },
     },
   },
   plugins: [],
-}
-
+};
