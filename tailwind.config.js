@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js,ts,jsx,tsx}"],
+  content: [
+    "./*.{html,js,ts,jsx,tsx}",
+    "./projects/**/*.{html,js,ts,jsx,tsx}"
+  ],
   theme: {
     extend: {
       colors: {
@@ -31,10 +34,16 @@ module.exports = {
         sand: "#ffefca",
         clay: "#d87546",
         darkclay: "#c26a3f",
+
+        strongCyan: "hsl(171, 66%, 44%)",
+        lightBlue: "hsl(233, 100%, 69%)",
+        darkGrayishBlue: "hsl(210, 10%, 33%)",
+        grayishBlue: "hsl(201, 11%, 66%)",
       },
       fontFamily: {
         mulish: ["Mulish", "sans-serif"],
         rokit: ["Rokkitt", "monospace"],
+        bai: ["Bai Jamjuree", "sans-serif"],
       },
       keyframes: {
         fadeIn: {
